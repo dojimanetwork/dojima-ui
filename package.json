@@ -1,0 +1,7 @@
+{
+  "name": "@dojima-ui/core",
+  "private": false,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
