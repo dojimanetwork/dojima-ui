@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/core",
-  "private": false,
+  "private": true,
   "workspaces":[
     "packages/*"
   ],
