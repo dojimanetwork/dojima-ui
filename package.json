@@ -1,7 +1,14 @@
 {
   "name": "@dojima-ui/core",
   "private": false,
+  "workspaces":[
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna build"
   }
 }

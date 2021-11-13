@@ -3,5 +3,11 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "independent",
+  "useWorkspaces": true,
+  "hoist": true,
+  "stream": true,
+  "bootstrap": {
+    "npmClientArgs": ["--no-package-lock"]
+  }
 }
