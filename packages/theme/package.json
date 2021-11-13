@@ -2,7 +2,11 @@
   "name": "@dojima-ui/theme",
   "version": "1.0.0",
   "description": "A dojima theme used across webpages developed in organisation.",
-  "keywords": ["theme", "material ui", "dojima"],
+  "keywords": [
+    "theme",
+    "material ui",
+    "dojima"
+  ],
   "author": "Viswa Reddy <viswa@nurture.farm>",
   "license": "ISC",
   "main": "lib/index.tsx",
@@ -21,10 +25,14 @@
     "url": "git+https://github.com/dojimanetwork/dojima-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "webpack --config ../../webpack/webpack.config.js"
   },
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
   },
-  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme"
+  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
+  "devDependencies": {
+    "style-loader": "^3.3.1"
+  }
 }
