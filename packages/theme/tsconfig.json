@@ -1,17 +1,18 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "dist",
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
     "target": "es5",
     "baseUrl": "./",
     "allowJs": true,
-    // "moduleResolution": "node",
-    // "paths": {
-    //   "*": [
-    //     "../../node_modules/*"
-    //   ]
-    // }
-  }
+    "declarationDir": "dist",
+    "lib": ["es6", "DOM", "ES2016", "ES2017"],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "lib/*"
+  ],
+  "exclude": ["dist"]
 }

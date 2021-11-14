@@ -12,6 +12,8 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
     "@types/webpack-bundle-analyzer": "^4.4.1",
@@ -23,8 +25,13 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^6.5.1",
     "lerna": "^4.0.0",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rollup": "^2.60.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
     "stream-browserify": "^3.0.0",
     "ts-loader": "^8.0.16",
     "typescript": "^4.4.4",
@@ -35,7 +42,8 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "rollup-build": "lerna run rollup-build"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",

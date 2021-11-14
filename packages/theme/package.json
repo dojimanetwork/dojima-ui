@@ -9,13 +9,15 @@
   ],
   "author": "Viswa Reddy <viswa@nurture.farm>",
   "license": "ISC",
-  "main": "lib/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -26,7 +28,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "webpack --config ../../webpack/webpack.config.js"
+    "build": "webpack --config ../../webpack/webpack.config.js",
+    "rollup-build": "rollup -c"
   },
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
