@@ -8,5 +8,8 @@
   "stream": true,
   "bootstrap": {
     "npmClientArgs": ["--no-package-lock"]
+  },
+  "stats": {
+    "errorDetails": true
   }
 }

@@ -58,10 +58,14 @@ const _module = {
 const resolve = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
-        'react': path.resolve(__dirname, './node_modules/react'),
-        'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
-        "react/jsx-dev-runtime":  path.resolve(__dirname, "./node_modules/react/jsx-dev-runtime.js"),
-        "react/jsx-runtime": path.resolve(__dirname, "./node_modules/react/jsx-runtime.js")
+        'react': path.resolve(__dirname, '../../node_modules/react'),
+        'react-dom': path.resolve(__dirname, '../../node_modules/react-dom'),
+        "react/jsx-dev-runtime": path.resolve(__dirname,"../../node_modules/react/jsx-dev-runtime.js"),
+        "react/jsx-runtime": path.resolve(__dirname,"../../node_modules/react/jsx-runtime.js")
+    },
+    fallback: {
+        buffer: require.resolve('buffer'),
+        stream: require.resolve('stream-browserify')
     }
 };
 
