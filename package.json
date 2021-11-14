@@ -42,7 +42,6 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
     "rollup-build": "lerna run rollup-build"
   },
   "dependencies": {

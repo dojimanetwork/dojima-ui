@@ -3,25 +3,26 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
-// @ts-ignore
-import currentPackagePath from "./package.json"
+import process from 'process'
+import path from 'path'
+
+const cwdPackagePath =  require(path.join(process.cwd(), 'package.json'))
+const packageJson = cwdPackagePath
 
 export default {
   input: "./lib/index.tsx",
   output: [
     {
-      file: currentPackagePath.main,
+      file: packageJson.main,
       format: "cjs",
       sourcemap: true,
-      exports: 'named',
-      // dir: "./build.cjs"
+      exports: 'named'
     },
     {
-      file: currentPackagePath.module,  
+      file: packageJson.module,  
       format: "esm",
       sourcemap: true,
-      exports: 'named',
-      // dir: "./build.esm"
+      exports: 'named'
     },
     
   ],
