@@ -39,10 +39,10 @@
     "typescript": "^4.4.4"
   },
   "scripts": {
+    "publish": "lerna publish",
     "bootstrap": "lerna bootstrap",
     "rollup-build": "lerna run rollup-build",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",
