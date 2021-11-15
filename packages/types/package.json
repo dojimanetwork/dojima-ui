@@ -1,10 +1,11 @@
 {
-  "name": "@dojima-ui/button",
-  "version": "0.0.1",
-  "description": "button used for dojima webpages.",
+  "name": "@dojima-ui/types",
+  "version": "1.0.0",
+  "description": "common types utilised by dojima organisation for webpages.",
   "keywords": [
+    "types",
     "dojima",
-    "button"
+    "webpages"
   ],
   "author": "Viswa Reddy <viswa@nurture.farm>",
   "license": "ISC",

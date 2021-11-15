@@ -29,7 +29,6 @@
     "url": "git+https://github.com/dojimanetwork/dojima-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "rollup-build": "rollup -c ../../rollup.config.js"
   },
   "bugs": {
