@@ -31,7 +31,7 @@ export interface GridComponentProps {
   md?: boolean | GridSize
   lg?: boolean | GridSize
   xl?: boolean | GridSize
-  children: ReactNode
+  children?: ReactNode
   className?: string
   container?: boolean
   justifyContent?: GridJustification
