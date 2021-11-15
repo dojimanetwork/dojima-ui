@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React from 'react'
 import Button from '@mui/material/Button'
 import { ButtonComponentProps } from '@dojima-ui/types'
 import { Grid } from '@mui/material'
@@ -55,4 +55,4 @@ function DojimaButton(props: ButtonComponentProps) {
   )
 }
 
-export default memo(DojimaButton)
+export default DojimaButton

@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/button",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "button used for dojima webpages.",
   "keywords": [
     "dojima",
@@ -17,7 +17,8 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
