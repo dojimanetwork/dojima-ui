@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/types",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "common types utilised by dojima organisation for webpages.",
   "keywords": [
     "types",
@@ -18,7 +18,8 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
