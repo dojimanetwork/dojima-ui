@@ -7,6 +7,7 @@ Below are the react components developed and published.
   1. Button
   2. Theme
   3. Types
+  4. Textfield
   
   
 Storybook is integrated to test the individual components developed by dojima.
