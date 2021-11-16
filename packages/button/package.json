@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/button",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "button used for dojima webpages.",
   "keywords": [
     "dojima",
@@ -35,6 +35,6 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/types": "^1.0.4"
+    "@dojima-ui/types": "^1.0.7-alpha.0"
   }
 }
