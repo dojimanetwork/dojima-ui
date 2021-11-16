@@ -34,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
   },
-  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme"
+  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
+  "gitHead": "10c9d562c05a50086fc11dc9b5096ce051cf200d"
 }
