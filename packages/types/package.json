@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/types",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "common types utilised by dojima organisation for webpages.",
   "keywords": [
     "types",
@@ -29,7 +29,7 @@
     "url": "git+https://github.com/dojimanetwork/dojima-ui.git"
   },
   "scripts": {
-    "rollup-build": "rollup -c ../../rollup.config.js"
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js"
   },
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"

@@ -1,12 +1,14 @@
 import { GridComponentProps } from './Grid'
-import { variant, color, CssComponentProps } from './Common'
+import { color, CssComponentProps } from './Common'
 import { CSSProperties } from 'react'
+
+export type buttonVariant = 'text' | 'outlined' | 'contained'
 
 export interface ButtonComponentProps
   extends GridComponentProps,
     CssComponentProps {
   text?: string
-  variant?: variant
+  variant?: buttonVariant
   color?: color
   startIcon?: React.ReactNode
   endIcon?: React.ReactNode

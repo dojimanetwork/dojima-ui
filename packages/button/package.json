@@ -31,7 +31,7 @@
     "rollup-build": "rollup -c ../../rollup.config.js"
   },
   "bugs": {
-    "url": "https://github.com/dojimanetwork/dojima-ui/issues"
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js"
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
