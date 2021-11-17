@@ -1,11 +1,10 @@
 {
-  "name": "@dojima-ui/types",
-  "version": "1.0.7-alpha.5",
-  "description": "common types utilised by dojima organisation for webpages.",
+  "name": "@dojima-ui/checkbox",
+  "version": "0.0.1",
+  "description": "Checkbox package utilised by dojima organisation.",
   "keywords": [
-    "types",
-    "dojima",
-    "webpages"
+    "checkbox",
+    "dojima"
   ],
   "author": "Viswa Reddy <viswa@nurture.farm>",
   "license": "ISC",
@@ -35,5 +34,7 @@
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
-  "gitHead": "10c9d562c05a50086fc11dc9b5096ce051cf200d"
+  "dependencies": {
+    "@dojima-ui/types": "1.0.7-alpha.5"
+  }
 }

@@ -16,13 +16,13 @@ export interface CssComponentProps {
 
 export interface FormControlComponentProps {
   label: string
-  id?: unknown
+  id?: any
   name?: string
   required?: boolean
-  value?: unknown
+  value?: any
   fullWidth?: boolean
   error?: boolean
-  helperText?: boolean
+  helperText?: string
   disable?: boolean
   className?: string
   placeholder?: string
