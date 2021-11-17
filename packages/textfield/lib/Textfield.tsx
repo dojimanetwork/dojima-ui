@@ -93,20 +93,18 @@ function DojimaTextfield(props: TextfieldComponentProps) {
 
 const BootstrapInput = styled(InputBase)(({ theme }) =>
   createStyles({
-    root: {
-      'label + &': {
-        marginTop: theme.spacing(2.5)
-      },
-      border: '1px solid rgba(0, 0, 0, 0.05)',
-      borderRadius: 8,
-      backgroundColor: theme.palette.common.white,
-      '&.Mui-focused': {
-        // boxShadow: `${alpha('#01a0b3', 0.25)} 0 0 0 0.1rem`,
-        border: 'solid 1px #01a0b3'
-      },
-      '& .MuiInputAdornment-positionEnd .MuiIconButton-edgeEnd': {
-        marginRight: '0px'
-      }
+    'label + &': {
+      marginTop: theme.spacing(1.5)
+    },
+    border: '1px solid rgba(0, 0, 0, 0.05)',
+    borderRadius: 8,
+    backgroundColor: theme.palette.common.white,
+    '&.Mui-focused': {
+      // boxShadow: `${alpha('#01a0b3', 0.25)} 0 0 0 0.1rem`,
+      border: 'solid 1px #01a0b3'
+    },
+    '& .MuiInputAdornment-positionEnd .MuiIconButton-edgeEnd': {
+      marginRight: '0px'
     },
     input: {
       borderRadius: 8,
