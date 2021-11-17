@@ -1,3 +1,7 @@
-import DojimaTheme from "./dojimaTheme"
-export * as colors from './colors'
+import DojimaTheme from './dojimaTheme'
+import StoryBookTheme from './storyBookTheme'
+import * as typography from './typography'
+import * as colors from './colors'
+
+export { StoryBookTheme, typography, colors }
 export default DojimaTheme
