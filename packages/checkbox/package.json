@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/checkbox",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "Checkbox package utilised by dojima organisation.",
   "keywords": [
     "checkbox",
@@ -35,6 +35,6 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/types": "1.0.7-alpha.6"
+    "@dojima-ui/types": "1.0.7-alpha.7"
   }
 }
