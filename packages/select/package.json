@@ -1,12 +1,8 @@
 {
-  "name": "@dojima-ui/types",
-  "version": "1.0.7-alpha.7",
-  "description": "common types utilised by dojima organisation for webpages.",
-  "keywords": [
-    "types",
-    "dojima",
-    "webpages"
-  ],
+  "name": "@dojima-ui/select",
+  "version": "1.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
   "author": "Viswa Reddy <viswa@nurture.farm>",
   "license": "ISC",
   "main": "dist/index.js",
@@ -35,5 +31,7 @@
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
-  "gitHead": "10c9d562c05a50086fc11dc9b5096ce051cf200d"
+  "dependencies": {
+    "@dojima-ui/types": "1.0.7-alpha.7"
+  }
 }

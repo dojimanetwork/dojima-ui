@@ -6,11 +6,9 @@ import {
   InputBase,
   InputLabel
 } from '@mui/material'
-import {} from '@dojima-ui/types'
 import React from 'react'
 import { styled } from '@mui/material/styles'
-import {} from '@dojima-ui/types'
-import { TextfieldComponentProps } from '@dojima-ui/types/lib'
+import { TextfieldComponentProps } from '@dojima-ui/types'
 
 function DojimaTextfield(props: TextfieldComponentProps) {
   const {

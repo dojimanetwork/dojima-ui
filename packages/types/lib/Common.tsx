@@ -27,3 +27,7 @@ export interface FormControlComponentProps {
   className?: string
   placeholder?: string
 }
+
+export interface ChildrenType {
+  children: React.ReactNode
+}
