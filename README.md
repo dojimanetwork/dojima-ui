@@ -24,6 +24,10 @@ Below are the react components developed and published.
 8. Date picker
 9. Alert
 10. Snackbar
+    a. Success
+    b. Error
+    c. Info
+    d. Warning
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -
