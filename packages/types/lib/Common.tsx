@@ -15,7 +15,7 @@ export interface CssComponentProps {
 }
 
 export interface FormControlComponentProps {
-  label: string
+  label?: string
   id?: any
   name?: string
   required?: boolean
