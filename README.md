@@ -20,7 +20,8 @@ Below are the react components developed and published.
    b. Multiple select
 7. Radio
    a. Single radio button select
-   b. Multipe radio button select
+   b. Multipe radio button select.
+8. Date picker.
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -
