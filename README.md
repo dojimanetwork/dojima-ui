@@ -31,6 +31,13 @@ Below are the react components developed and published.
 11. context providers
     a. Online status connectivity provider
     b. Snackbar provider
+12. react hooks
+    a. Debounce - Technique to delay event by amount.
+    b. toggle - toggling state
+    c. document title - to change document title in any react component.
+    d. force update - to forcefully update the ui.
+    e. window size - to know the window width, height on change.
+    f. animate height - to make particular html element to height zero or full height on user action.
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -
