@@ -20,8 +20,10 @@ Below are the react components developed and published.
    b. Multiple select
 7. Radio
    a. Single radio button select
-   b. Multipe radio button select.
-8. Date picker.
+   b. Multipe radio button select
+8. Date picker
+9. Alert
+10. Snackbar
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -
