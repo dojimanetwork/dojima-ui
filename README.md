@@ -10,12 +10,17 @@ Below are the react components developed and published.
 2. Theme
 3. Types
 4. Textfield
+   a. string
+   b. number
 5. Checkbox
    a. Single checkbox
    b. Checkbox group.
 6. Select
    a. Single select
    b. Multiple select
+7. Radio
+   a. Single radio button select
+   b. Multipe radio button select
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -

@@ -1309,11 +1309,6 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.5.tgz#9283c9ce5b289a3c4f61c12757469e59377f81f3"
   integrity sha512-6nFkfkmSeV/rqSaS4oWHgmpnYw194f6hmWF5is6b0J1naJZoiD0NTc9AiUwPHvWsowkjuHErCZT1wa0jg+BLIA==
 
-"@dojima-ui/types@1.0.7-alpha.6":
-  version "1.0.7-alpha.6"
-  resolved "https://registry.yarnpkg.com/@dojima-ui/types/-/types-1.0.7-alpha.6.tgz#f14a60420445b0cd8bbcd5e4d5c71e3c4f78467d"
-  integrity sha512-oyBKRhyUXvMgWJF9fWLOcSMvTXCFOtn12/prcc1ohU70zt9g1iHsRkVIM8qe4VS9GILiJcp/oBa+gKWwWqfyYg==
-
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.3.0.tgz#3a16850ba04d8d9651f07f3fb674b3436a4fb9d7"

@@ -14,4 +14,5 @@ export interface RadioComponentProps
   radioSize?: RadioButtonSize
   selectionType: RadioGroupSelectionType
   radioClassname?: string
+  name: string
 }
