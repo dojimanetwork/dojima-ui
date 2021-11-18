@@ -28,6 +28,9 @@ Below are the react components developed and published.
     b. Error
     c. Info
     d. Warning
+11. context providers
+    a. Online status connectivity provider
+    b. Snackbar provider
 
 Storybook is integrated to test the individual components developed by dojima.
 Run -

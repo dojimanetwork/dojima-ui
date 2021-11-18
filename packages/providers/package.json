@@ -1,14 +1,14 @@
 {
-  "name": "@dojima-ui/snackbar",
-  "version": "0.0.1-alpha.1",
-  "description": "Snackbar component for dojima organisation.",
+  "name": "@dojima-ui/providers",
+  "version": "0.0.1",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [
-    "snackbar",
-    "error",
-    "success",
-    "info",
-    "warning"
+    "provider",
+    "context",
+    "react"
   ],
+  "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
+  "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "src": "lib/index.tsx",
@@ -36,7 +36,6 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/alert": "^0.0.1",
     "@dojima-ui/types": "^1.0.7-alpha.11"
   }
 }
