@@ -7,7 +7,7 @@
     "dojima",
     "webpages"
   ],
-  "author": "Viswa Reddy <viswa@nurture.farm>",
+  "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

@@ -107,17 +107,15 @@ export default DojimaSelect
 
 const BootstrapInput = styled(InputBase)(({ theme }) =>
   createStyles({
-    root: {
-      'label + &': {
-        marginTop: theme.spacing(2.5)
-      },
-      '& .MuiSelect-icon': {
-        color: '#3788e4'
-        // marginRight: '1rem'
-      },
-      '& .MuiNativeSelect-icon.Mui-disabled': {
-        color: 'rgba(0,0,0, 0.1)'
-      }
+    'label + &': {
+      marginTop: theme.spacing(2.5)
+    },
+    '& .MuiSelect-icon': {
+      color: '#3788e4'
+      // marginRight: '1rem'
+    },
+    '& .MuiNativeSelect-icon.Mui-disabled': {
+      color: 'rgba(0,0,0, 0.1)'
     },
     input: {
       borderRadius: 8,
