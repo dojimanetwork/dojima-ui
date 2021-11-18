@@ -1,11 +1,11 @@
 {
-  "name": "@dojima-ui/providers",
-  "version": "0.0.1",
-  "description": "common context providers for dojima organisation.",
+  "name": "@dojima-ui/hooks",
+  "version": "1.0.0",
+  "description": "commom react hooks for dojima organisation.",
   "keywords": [
-    "provider",
-    "context",
-    "react"
+    "hooks",
+    "react",
+    "dojima"
   ],
   "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
@@ -34,8 +34,5 @@
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
   },
-  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
-  "dependencies": {
-    "@dojima-ui/types": "^1.0.7-alpha.11"
-  }
+  "homepage": "https://github.com/dojimanetwork/dojima-ui#readme"
 }

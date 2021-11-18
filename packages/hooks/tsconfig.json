@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "baseUrl": "./",
+    "allowJs": true,
+    "declarationDir": "dist",
+    "lib": ["es6", "DOM", "ES2016", "ES2017"],
+    "resolveJsonModule": true
+  },
+  "include": ["lib/*", "lib/context-providers/SnackbarProvider.tsx"],
+  "exclude": ["dist", "node_modules"]
+}
