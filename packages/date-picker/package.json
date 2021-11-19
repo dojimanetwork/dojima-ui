@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/date-picker",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "A date picker component for dojima organisation.",
   "keywords": [
     "date-picker",
@@ -42,6 +42,6 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/types": "^1.0.7-alpha.12"
+    "@dojima-ui/types": "^1.0.7-alpha.14"
   }
 }
