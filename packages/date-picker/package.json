@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/date-picker",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "A date picker component for dojima organisation.",
   "keywords": [
     "date-picker",

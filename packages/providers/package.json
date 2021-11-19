@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/providers",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "common context providers for dojima organisation.",
   "keywords": [
     "provider",
