@@ -9,13 +9,13 @@
   ],
   "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
+  "browser": "dist/index.js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "src": "lib/index.tsx",
   "types": "dist/lib/index.d.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib",
@@ -28,8 +28,14 @@
     "type": "git",
     "url": "git+https://github.com/dojimanetwork/dojima-ui.git"
   },
+  "size-limit": [
+    {
+      "path": "./dist/**/*"
+    }
+  ],
   "scripts": {
-    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js"
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js",
+    "size": "size-limit"
   },
   "bugs": {
     "url": "https://github.com/dojimanetwork/dojima-ui/issues"
