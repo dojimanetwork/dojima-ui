@@ -7,6 +7,7 @@ import process from 'process'
 import path from 'path'
 import babel from '@rollup/plugin-babel'
 import filesize from 'rollup-plugin-filesize'
+import analyze from 'rollup-plugin-analyzer'
 
 const cwdPackagePath = require(path.join(process.cwd(), 'package.json'))
 const packageJson = cwdPackagePath
@@ -67,6 +68,7 @@ export default {
       file: packageJson.browser,
       format: 'umd',
       globals,
+      exports: 'named',
       name: 'index'
     }
   ],
@@ -87,7 +89,8 @@ export default {
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
-    filesize()
+    filesize(),
+    analyze()
   ],
   watch,
   external: ['cjs', 'es'].includes(['cjs', 'es'])
