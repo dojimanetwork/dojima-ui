@@ -1,0 +1,19 @@
+{
+  "installCommand": "rollup-build",
+  "node": "14",
+  "packages": [
+    "packages/alert",
+    "packages/button",
+    "packages/checkbox",
+    "packages/date-picker",
+    "packages/hooks",
+    "packages/providers",
+    "packages/radio",
+    "packages/select",
+    "packages/snackbar",
+    "packages/textfield",
+    "packages/theme",
+    "packages/type"
+  ],
+  "sandboxes": ["new", "vanilla"]
+}
