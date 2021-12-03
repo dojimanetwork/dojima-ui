@@ -2,6 +2,16 @@
 
 Doijma UI is a React UI library which contains user interface components utilised by dojima organisation.
 
+Peer dependecies involved:
+
+1.  react - ^17.0
+2.  react-dom - ^17.0
+3.  @mui/material - ^5.0
+4.  @mui/lab
+5.  @mui/styles
+6.  formik - forms
+7.  lodash
+
 Currently it is under heavy development.
 
 Below are the react components developed and published.
