@@ -13,7 +13,24 @@
     "packages/snackbar",
     "packages/textfield",
     "packages/theme",
-    "packages/type"
+    "packages/types"
   ],
-  "sandboxes": ["new", "vanilla"]
+  "sandboxes": [
+    "new",
+    "github/dojimanetwork/dojima-ui/tree/HEAD/examples/create-react-app-with-typescript"
+  ],
+  "publishDirectory": {
+    "@dojima-ui/alert": "packages/alert/dist",
+    "@dojima-ui/button": "packages/button/dist",
+    "@dojima-ui/checkbox": "packages/checkbox/dist",
+    "@dojima-ui/date-picker": "packages/date-picker/dist",
+    "@dojima-ui/hooks": "packages/hooks/dist",
+    "@dojima-ui/providers": "packages/providers/dist",
+    "@dojima-ui/radio": "packages/radio/dist",
+    "@dojima-ui/select": "packages/select/dist",
+    "@dojima-ui/snackbar": "packages/snackbar/dist",
+    "@dojima-ui/textfield": "packages/textfield/dist",
+    "@dojima-ui/theme": "packages/theme/dist",
+    "@dojima-ui/types": "packages/types/dist"
+  }
 }

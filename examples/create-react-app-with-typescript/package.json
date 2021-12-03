@@ -1,0 +1,33 @@
+{
+  "name": "create-react-app-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@dojima-ui/alert": "latest",
+    "@dojima-ui/button": "latest",
+    "@dojima-ui/checkbox": "latest",
+    "@dojima-ui/date-picker": "latest",
+    "@dojima-ui/hooks": "latest",
+    "@dojima-ui/providers": "latest",
+    "@dojima-ui/radio": "latest",
+    "@dojima-ui/select": "latest",
+    "@dojima-ui/snackbar": "latest",
+    "@dojima-ui/textfield": "latest",
+    "@dojima-ui/theme": "latest",
+    "@dojima-ui/types": "latest",
+    "@types/react-dom": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
