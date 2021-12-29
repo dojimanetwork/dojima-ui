@@ -55,5 +55,5 @@ Below are the react components developed and published.
     - animate height - to make particular html element to height zero or full height on user action.
 
 Storybook is integrated to test the individual components developed by dojima.
-Run -
+`Run` -
 yarn run storybook : Starts story book webpage to test the components.
