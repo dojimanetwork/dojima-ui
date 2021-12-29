@@ -5,22 +5,22 @@ import { ButtonComponentProps } from "../../types";
 
 const FlatButtonRoot = styled('button')(
   () => `
-    width: 99px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 0px;
-    border-radius: 8px;
-    border: 0px none transparent;
+    width: 6rem;
+    height: 2.5rem;
+    padding: 0rem;
+    border-radius: 0.5rem;
+    border: 0rem none transparent;
     background-color: #000;
     color: #cfd0d0;
 
     &:hover {
       cursor: pointer;
+    };
+
+    &.Mui-disabled {
+      box-shadow: none;
+      opacity: 0.5;
+      cursor: not-allowed;
     };
   `,
 );
@@ -28,11 +28,8 @@ const FlatButtonRoot = styled('button')(
 export default function FlatButton(props: ButtonComponentProps) {
   const {
     text,
-    variant,
     onClick,
     disable,
-    startIcon,
-    endIcon,
     className,
     fullWidth,
     buttonStyles
@@ -41,9 +38,6 @@ export default function FlatButton(props: ButtonComponentProps) {
   return (
       <ButtonUnstyled
         fullWidth={fullWidth}
-        variant={variant ?? 'contained'}
-        startIcon={startIcon}
-        endIcon={endIcon}
         style={buttonStyles}
         className={className}
         onClick={onClick}
