@@ -17,6 +17,9 @@ Currently it is under heavy development.
 Below are the react components developed and published.
 
 1. Button
+   a. Dojima default button.
+   b. Neumorphism styled button.
+   c. Flat button.
 2. Theme
 3. Types
 4. Textfield
