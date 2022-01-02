@@ -1,3 +1,3 @@
-import DojimaTextfield from './Textfield'
+import DojimaTextfield from './DojimaTextfield'
 
 export default DojimaTextfield
