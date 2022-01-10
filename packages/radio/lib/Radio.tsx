@@ -24,7 +24,8 @@ function DojimaRadioGroup(
     error,
     helperText,
     selectionType = 'single',
-    className
+    className,
+    disable
   } = props
   const classes = MuiStyles()
 
@@ -40,12 +41,18 @@ function DojimaRadioGroup(
   if (selectionType === 'single')
     return (
       <FormControlMui component='fieldset'>
-        <FormLabelMui component='legend'>{label}</FormLabelMui>,
+        <FormLabelMui component='legend'>{label}</FormLabelMui>
         <RadioGroup row={horiontal ?? true} value={value} onChange={onChange}>
           {options.map((option, index) => (
             <FormControlLabelMui
               value={option}
-              control={<RadioMui size={radioSize ?? 'small'} />}
+              control={
+                <RadioMui 
+                    disabled={disable} 
+                    className={classes.root} 
+                    size={radioSize ?? 'small'} 
+                />
+              }
               label={option}
               key={option + index}
               id={id}
@@ -67,7 +74,7 @@ function DojimaRadioGroup(
         name={name}
         render={(arrayHelpers) => (
           <FormControlMui component='fieldset'>
-            <FormLabelMui component='legend'>{label}</FormLabelMui>,
+            <FormLabelMui component='legend'>{label}</FormLabelMui>
             <RadioGroup
               row={horiontal ?? true}
               value={value ?? null}
@@ -77,7 +84,12 @@ function DojimaRadioGroup(
               {options.map((option, index) => (
                 <FormControlLabelMui
                   value={option}
-                  control={<RadioMui size={radioSize ?? 'small'} />}
+                  control={
+                    <RadioMui 
+                        disabled={disable} 
+                        className={classes.root} 
+                        size={radioSize ?? 'small'} 
+                    />}
                   label={option}
                   key={option + index}
                   id={id}
@@ -97,7 +109,34 @@ function DojimaRadioGroup(
 }
 
 const MuiStyles = makeStyles(() => ({
-  helperText: { color: 'red' }
+  helperText: { color: 'red' },
+  root: {
+    width: '1.5rem',
+    height: '1.5rem',
+    padding: '0.388rem 0.388rem 0.388rem 0.388rem',
+    borderRadius: '0.75rem',
+    boxShadow: '0.375rem 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.16), -0.375rem -0.375rem 0.75rem 0 rgba(255, 255, 255, 0.04)',
+    border: 'solid 0.063rem rgba(0, 0, 0, 0.08)',
+    backgroundImage: 'linear-gradient(122deg, rgba(0, 0, 0, 0) 8%, #000 89%), linear-gradient(to bottom, black, black)',
+    '& .MuiSvgIcon-root': {
+      width: '0.719rem',
+      height: '0.719rem',
+      borderRadius: '0.75rem',
+      boxShadow: 'inset 0.125rem 0.125rem 0.188rem 0 rgba(0, 0, 0, 0.15), inset -0.125rem -0.125rem 0.25px 0 rgba(255, 255, 255, 0.21)',
+      backgroundColor: '#8c8e8f',
+      fill: '#8c8e8f',
+    },
+    '&.Mui-checked': {
+      '& .MuiSvgIcon-root': {
+        backgroundColor: '#e1aa75',
+        fill: '#e1aa75',
+      },
+    },
+    '&.Mui-disabled': {
+      opacity: 0.3,
+      cursor: 'not-allowed',
+    },
+  }
 }))
 
 export default DojimaRadioGroup
