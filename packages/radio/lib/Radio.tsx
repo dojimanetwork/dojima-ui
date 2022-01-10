@@ -17,7 +17,7 @@ function DojimaRadioGroup(
     options,
     onChange,
     value,
-    horiontal,
+    horizontal,
     radioSize,
     id,
     name,
@@ -42,7 +42,7 @@ function DojimaRadioGroup(
     return (
       <FormControlMui component='fieldset'>
         <FormLabelMui component='legend'>{label}</FormLabelMui>
-        <RadioGroup row={horiontal ?? true} value={value} onChange={onChange}>
+        <RadioGroup row={horizontal ?? true} value={value} onChange={onChange}>
           {options.map((option, index) => (
             <FormControlLabelMui
               value={option}
@@ -76,7 +76,7 @@ function DojimaRadioGroup(
           <FormControlMui component='fieldset'>
             <FormLabelMui component='legend'>{label}</FormLabelMui>
             <RadioGroup
-              row={horiontal ?? true}
+              row={horizontal ?? true}
               value={value ?? null}
               name={name}
               onChange={(e) => handleArrayChange(e, arrayHelpers)}
