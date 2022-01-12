@@ -1,5 +1,6 @@
-/// <references types="react-scripts" />
+import DojimaButton from './DojimaButton'
+import FlatButton from './FlatButton'
+import NeuButton from './NeuButton'
 
-import DojimaButton from './Button'
-
+export { NeuButton, FlatButton }
 export default DojimaButton
