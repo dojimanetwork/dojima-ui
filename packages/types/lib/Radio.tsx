@@ -10,7 +10,7 @@ export interface RadioComponentProps
     GridComponentProps {
   options: string[]
   onChange?: (event: React.ChangeEvent<HTMLInputElement>, value: string) => void
-  horiontal?: boolean
+  horizontal?: boolean
   radioSize?: RadioButtonSize
   selectionType: RadioGroupSelectionType
   radioClassname?: string

@@ -46,54 +46,46 @@ const watch = {
 const CJS_AND_ES_EXTERNALS = external.concat(/@babel\/runtime/)
 
 export default {
-  input: './lib/index.tsx',
+  input: './lib/index.ts',
   output: [
     {
       file: packageJson.main,
       format: 'cjs',
-      // sourcemap: true,
-      exports: 'named',
-      globals,
-      name: 'index'
+      sourcemap: true,
+      exports: 'named'
     },
     {
       file: packageJson.module,
-      format: 'esm',
-      // sourcemap: true,
-      exports: 'named',
-      globals,
-      name: 'index'
+      format: 'es',
+      sourcemap: true,
+      exports: 'named'
     },
-    {
-      file: packageJson.browser,
-      format: 'umd',
-      globals,
-      exports: 'named',
-      name: 'index'
-    }
+    // {
+    //   file: packageJson.browser,
+    //   format: 'umd',
+    //   globals,
+    //   exports: 'named',
+    //   name: 'index'
+    // }
   ],
   plugins: [
     peerDepsExternal(),
-    babel({
-      // runtimeHelpers: true,
-      babelHelpers: 'runtime',
-      exclude: '**/node_modules/**',
-      presets: ['@babel/preset-env'],
-      plugins: ['@babel/transform-runtime']
-    }),
-    resolve({
-      customResolveOptions: {
-        moduleDirectories: ['lib']
-      }
-    }),
-    commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
-    filesize(),
-    analyze()
+    resolve(),
+    typescript({ useTsconfigDeclarationDir: true, clean: true }),
+    commonjs(),
+    // babel({
+    //   // runtimeHelpers: true,
+    //   // babelHelpers: 'runtime',
+    //   exclude: '**/node_modules/**',
+    //   // presets: ['@babel/preset-env'],
+    //   // plugins: ['@babel/transform-runtime']
+    // }),
+    // filesize(),
+    // analyze()
   ],
-  watch,
-  external: ['cjs', 'es'].includes(['cjs', 'es'])
-    ? CJS_AND_ES_EXTERNALS
-    : external
+  // watch,
+  // external: ['cjs', 'es'].includes(['cjs', 'es'])
+  //   ? CJS_AND_ES_EXTERNALS
+  //   : external
 }

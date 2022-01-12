@@ -1,20 +1,32 @@
 {
   "name": "@dojima-ui/radio",
-  "version": "1.0.0-alpha.2",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "version": "1.0.0-alpha.4",
+  "description": "Radio button for dojima organisation",
   "keywords": [
     "radio",
     "dojima"
   ],
   "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
-  "browser": "dist/index.js",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "src": "lib/index.tsx",
-  "types": "dist/lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.8.1",
+    "@mui/lab": "^5.0.0-alpha.55",
+    "@mui/material": "^5.1.0",
+    "@mui/styles": "^5.1.1",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.1.30",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0"
   },
   "files": [
     "lib",
@@ -33,7 +45,7 @@
     }
   ],
   "scripts": {
-    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js",
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js && tsc --emitDeclarationOnly",
     "size": "size-limit"
   },
   "bugs": {
@@ -41,6 +53,6 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/types": "^1.0.7-alpha.14"
+    "@dojima-ui/types": "^1.0.7-alpha.16"
   }
 }

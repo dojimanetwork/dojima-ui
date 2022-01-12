@@ -1,8 +1,8 @@
 {
   "name": "@dojima-ui/textfield",
-  "version": "1.0.1-alpha.5",
-  "description": "Textfield component for dojima organisation.",
-  "keywords": ["textfield"],
+  "version": "1.0.1-alpha.4",
+  "description": "Radio button for dojima organisation.",
+  "keywords": ["radio"],
   "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
   "browser": "dist/index.js",
