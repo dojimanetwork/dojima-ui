@@ -12,6 +12,9 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
   "peerDependencies": {
     "prop-types": "^15.8.1",
     "@mui/lab": "^5.0.0-alpha.55",
@@ -25,12 +28,9 @@
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0"
   },
-  "directories": {
-    "lib": "lib"
-  },
   "files": [
-    "dist",
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -46,7 +46,7 @@
     }
   ],
   "scripts": {
-    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js",
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js && tsc --emitDeclarationOnly",
     "size": "size-limit --why"
   },
   "bugs": {

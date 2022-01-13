@@ -5,21 +5,21 @@ import typescript from 'rollup-plugin-typescript2'
 import postcss from 'rollup-plugin-postcss'
 import process from 'process'
 import path from 'path'
-import babel from '@rollup/plugin-babel'
+// import babel from '@rollup/plugin-babel'
 import filesize from 'rollup-plugin-filesize'
 import analyze from 'rollup-plugin-analyzer'
 
 const cwdPackagePath = require(path.join(process.cwd(), 'package.json'))
 const packageJson = cwdPackagePath
 
-const globals = {
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  '@babel/runtime/regenerator': 'regeneratorRuntime',
-  '@mui/material': 'material',
-  '@emotion/styled': 'emStyled',
-  '@emotion/react': 'react'
-}
+// const globals = {
+//   react: 'React',
+//   'react-dom': 'ReactDOM',
+//   '@babel/runtime/regenerator': 'regeneratorRuntime',
+//   '@mui/material': 'material',
+//   '@emotion/styled': 'emStyled',
+//   '@emotion/react': 'react'
+// }
 
 const external = [
   'react',
@@ -43,7 +43,7 @@ const watch = {
 }
 
 // https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers
-const CJS_AND_ES_EXTERNALS = external.concat(/@babel\/runtime/)
+// const CJS_AND_ES_EXTERNALS = external.concat(/@babel\/runtime/)
 
 export default {
   input: './lib/index.ts',
@@ -81,10 +81,10 @@ export default {
     //   // presets: ['@babel/preset-env'],
     //   // plugins: ['@babel/transform-runtime']
     // }),
-    // filesize(),
-    // analyze()
+    filesize(),
+    analyze()
   ],
-  // watch,
+  watch,
   // external: ['cjs', 'es'].includes(['cjs', 'es'])
   //   ? CJS_AND_ES_EXTERNALS
   //   : external

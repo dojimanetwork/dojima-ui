@@ -1,3 +1,3 @@
 import DojimaCheckboxGroup from './CheckboxGroup'
 
-export { DojimaCheckboxGroup }
+export default DojimaCheckboxGroup

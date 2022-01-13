@@ -9,6 +9,7 @@ import Checkbox from '@mui/material/Checkbox'
 import { nanoid } from 'nanoid'
 import { FieldArray, FieldArrayRenderProps } from 'formik'
 import { CheckboxGroupComponentProps } from '@dojima-ui/types'
+//@ts-ignore
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 
 function DojimaCheckboxGroup(props: CheckboxGroupComponentProps) {
