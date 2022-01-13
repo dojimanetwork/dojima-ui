@@ -21,19 +21,19 @@ const packageJson = cwdPackagePath
 //   '@emotion/react': 'react'
 // }
 
-const external = [
-  'react',
-  'react-dom',
-  '@mui/material',
-  '@mui/lab',
-  '@mui/styles',
-  'lodash',
-  '@emotion/react',
-  'formik',
-  'nanoid',
-  '@emotion/styled',
-  '@storybook/react'
-]
+// const external = [
+//   'react',
+//   'react-dom',
+//   '@mui/material',
+//   '@mui/lab',
+//   '@mui/styles',
+//   'lodash',
+//   '@emotion/react',
+//   'formik',
+//   'nanoid',
+//   '@emotion/styled',
+//   '@storybook/react'
+// ]
 
 const watch = {
   chokidar: {
