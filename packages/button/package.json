@@ -54,7 +54,7 @@
   },
   "homepage": "https://github.com/dojimanetwork/dojima-ui#readme",
   "dependencies": {
-    "@dojima-ui/types": "^1.0.7-alpha.14"
+    "@dojima-ui/types": "^1.0.7-alpha.17"
   },
   "gitHead": "10c9d562c05a50086fc11dc9b5096ce051cf200d"
 }
