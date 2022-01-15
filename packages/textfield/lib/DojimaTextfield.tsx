@@ -8,7 +8,7 @@ import {
   import React from 'react'
   import { styled } from '@mui/material/styles'
   import { makeStyles } from '@mui/styles';
-  import { TextfieldComponentProps } from '../../types';
+  import { TextfieldComponentProps } from '@dojima-ui/types';
   
   const useStyles = makeStyles(() =>
     ({
