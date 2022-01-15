@@ -1,5 +1,4 @@
 import React from 'react'
-import { createStyles } from '@mui/material/styles'
 import { makeStyles } from '@mui/styles'
 import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
@@ -7,12 +6,48 @@ import FormHelperText from '@mui/material/FormHelperText'
 import { Grid, InputBase, MenuItem, Select } from '@mui/material'
 import { isNumber } from 'lodash'
 import { ChildrenType, SelectComponentProps } from '@dojima-ui/types'
-import { styled } from '@mui/material/styles'
+
+const MenuProps = {
+  PaperProps: {
+    style: {
+      borderRadius: '12px',
+      boxShadow: '0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.12), 0 8px 10px 0 rgba(0, 0, 0, 0.14)',
+      backgroundColor: '#1f2123',
+      color: '#4b4e4f',
+      width: '10.2rem',
+      marginTop: '17px',
+      maxHeight: '225px',
+    },
+    sx: {
+      "& .MuiMenuItem-root:hover": {
+        backgroundColor: '#3c3e40',
+      },
+    }
+  },
+};
 
 const usePlaceholderStyles = makeStyles(() => ({
+  select: {
+    '&.MuiInputBase-root': {
+      color:'#ffa651',
+      letterSpacing: '-0.02rem',
+      textAlign: 'left',
+      backgroundColor: '#212426',
+      width: '10.2rem',
+      height: '3.5rem',
+      borderRadius: '0.75rem',
+      padding: '1rem 1.25rem',
+      boxShadow: '0.375rem 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.16), -0.375rem -0.375rem 0.75rem 0 rgba(255, 255, 255, 0.04)',
+      border: 'solid 0.125rem rgba(0, 0, 0, 0.08)',
+      borderImage: 'linear-gradient(101deg, rgba(0, 0, 0, 0) 3%, #000 95%), linear-gradient(to bottom, #212426, #212426)',
+    },
+    '& .MuiSvgIcon-root': {
+      color:'#ffa651',
+    },
+  },
   placeholder: {
-    color: '#aaa'
-  }
+    color:'#aaa',
+  },
 }))
 
 const Placeholder = ({ children }: ChildrenType) => {
@@ -44,6 +79,7 @@ function DojimaSelect(props: SelectComponentProps) {
     placeholder,
     className
   } = props
+  const classes = usePlaceholderStyles();
   return (
     <Grid
       item
@@ -60,6 +96,7 @@ function DojimaSelect(props: SelectComponentProps) {
         fullWidth={fullWidth ?? false}
         error={error}
         disabled={disable}
+        sx={{ m: 1}}
       >
         <InputLabel shrink htmlFor={name}>
           {label}
@@ -72,18 +109,20 @@ function DojimaSelect(props: SelectComponentProps) {
           name={name}
           error={error}
           displayEmpty
-          input={<BootstrapInput />}
+          className={classes.select}
+          input={<InputBase/>}
           renderValue={() =>
             value && (value.length > 0 || isNumber(value)) ? (
               value
             ) : (
-              <Placeholder>{placeholder}</Placeholder>
+              <Placeholder >{placeholder}</Placeholder>
             )
           }
+          MenuProps={MenuProps}
         >
           {type === 'string' ? (
             <MenuItem value='' key={`${id}${label}null`} disabled>
-              {emptyValueLabel ?? placeholder}
+              {emptyValueLabel ?? placeholder} 
             </MenuItem>
           ) : (
             <MenuItem value={0} key={`${id}${label}null`} disabled>
@@ -92,7 +131,10 @@ function DojimaSelect(props: SelectComponentProps) {
           )}
           {options &&
             options.map((option: string, index: number) => (
-              <MenuItem value={option} key={id + option + index}>
+              <MenuItem 
+                value={option} 
+                key={id + option + index}
+              >
                 {option}
               </MenuItem>
             ))}
@@ -104,37 +146,3 @@ function DojimaSelect(props: SelectComponentProps) {
 }
 
 export default DojimaSelect
-
-const BootstrapInput = styled(InputBase)(({ theme }) =>
-  createStyles({
-    'label + &': {
-      marginTop: theme.spacing(2.5)
-    },
-    '& .MuiSelect-icon': {
-      color: '#3788e4'
-      // marginRight: '1rem'
-    },
-    '& .MuiNativeSelect-icon.Mui-disabled': {
-      color: 'rgba(0,0,0, 0.1)'
-    },
-    input: {
-      borderRadius: 8,
-      position: 'relative',
-      backgroundColor: theme.palette.background.paper,
-      border: '1px solid rgba(0, 0, 0, 0.05)',
-      fontSize: 16,
-      // padding: "10px 26px 10px 12px",
-      padding: '12px 12px',
-      transition: theme.transitions.create(['border-color', 'box-shadow']),
-      // Use the system font instead of the default Roboto font.
-      '&:focus': {
-        borderRadius: 8,
-        borderColor: 'solid 1px #01a0b3'
-      },
-      '&:disabled': {
-        borderColor: 'rgba(0,0,0, 0.1)',
-        cursor: 'not-allowed'
-      }
-    }
-  })
-)
