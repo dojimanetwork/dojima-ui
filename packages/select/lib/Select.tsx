@@ -46,7 +46,7 @@ const usePlaceholderStyles = makeStyles(() => ({
     },
   },
   placeholder: {
-    color:'#aaa',
+    color:'#ffa651',
   },
 }))
 
