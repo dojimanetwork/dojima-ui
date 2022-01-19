@@ -18,7 +18,7 @@ const MuiStyles = makeStyles(() => ({
       color: '#e1aa75',
       '&:focus': {
         border: '0.25rem solid rgba(255, 255, 255, 0.02)',
-        backgroundImage: 'linear-gradient(100deg, #000 3%, rgba(0, 0, 0, 0) 96%), linear-gradient(to bottom, #000, #000)',
+        backgroundImage: 'linear-gradient(100deg, rgba(0, 0, 0, 0) 3%, #000 96%), linear-gradient(to bottom, #212426, #212426)',
       },
       '&.Mui-disabled': {
         boxShadow: 'none',
