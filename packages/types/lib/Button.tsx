@@ -12,7 +12,7 @@ export interface ButtonComponentProps
   color?: color
   startIcon?: React.ReactNode
   endIcon?: React.ReactNode
-  onClick: React.MouseEventHandler<HTMLButtonElement>
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
   disable?: boolean
   fullWidth?: boolean
   className?: string
