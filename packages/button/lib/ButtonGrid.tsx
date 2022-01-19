@@ -1,8 +1,8 @@
 import * as React from "react";
-import { ButtonComponentProps } from "@dojima-ui/types";
+import { GridComponentProps } from "@dojima-ui/types";
 import { Grid } from "@mui/material";
 
-interface GridProps extends ButtonComponentProps{
+interface GridProps extends GridComponentProps{
   children: React.ReactNode;
 }
 
