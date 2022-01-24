@@ -4,7 +4,7 @@ import { ButtonComponentProps } from '@dojima-ui/types'
 import { makeStyles } from '@mui/styles'
 import { Theme } from '@mui/material'
 
-const MuiStyles = makeStyles<Theme, NeuButtonProps>(() => ({
+const MuiStyles = makeStyles<Theme, ButtonComponentProps>(() => ({
   button: {
     '&.MuiButton-root': {
       width: '11.75rem',
@@ -30,9 +30,7 @@ const MuiStyles = makeStyles<Theme, NeuButtonProps>(() => ({
   }
 }))
 
-interface NeuButtonProps extends ButtonComponentProps {
-  color?: string;
-}
+
 
 function NeuButton(props: ButtonComponentProps) {
   const {
