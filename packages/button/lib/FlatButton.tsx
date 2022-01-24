@@ -12,7 +12,7 @@ const MuiStyles = makeStyles<Theme, FlatBtnProps>(() => ({
       padding: '0rem',
       border: '1px solid #4b4e4f',
       borderRadius: '0.5rem',
-      textTransform:({textTransform}) => (textTransform) ?? 'lowercase',
+      textTransform: 'none',
       margin: ({margin}) => (margin) ?? '20px 20px 0px 0px',
       backgroundColor: ({bgColor}) => bgColor ?? 'rgba(93, 93, 93, 0.1)',
       color: ({color}) => color ?? 'black',
@@ -32,7 +32,6 @@ interface FlatBtnProps extends ButtonComponentProps {
   hoverColor?: string;
   width?: string;
   height?: string;
-  textTransform?: string;
   margin?: string;
 }
 
