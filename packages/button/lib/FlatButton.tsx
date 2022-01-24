@@ -14,7 +14,7 @@ const MuiStyles = makeStyles<Theme, FlatBtnProps>(() => ({
       borderRadius: '0.5rem',
       textTransform:({textTransform}) => (textTransform) ?? 'lowercase',
       margin: ({margin}) => (margin) ?? '20px 20px 0px 0px',
-      backgroundColor: ({bgColor}) => bgColor ?? 'white',
+      backgroundColor: ({bgColor}) => bgColor ?? 'rgba(93, 93, 93, 0.1)',
       color: ({color}) => color ?? 'black',
       '&.Mui-disabled': {
         boxShadow: 'none',
