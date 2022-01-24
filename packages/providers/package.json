@@ -34,7 +34,7 @@
     }
   ],
   "scripts": {
-    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js",
+    "rollup-build": "rm -rf ./dist && rm -rf ./node_modules && rollup -c ../../rollup.config.js && tsc --emitDeclarationOnly",
     "size": "size-limit"
   },
   "bugs": {

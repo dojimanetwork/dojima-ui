@@ -9,10 +9,10 @@ export interface ButtonComponentProps
     CssComponentProps {
   text?: string
   variant?: buttonVariant
-  color?: color
+  color?: string
   startIcon?: React.ReactNode
   endIcon?: React.ReactNode
-  onClick: React.MouseEventHandler<HTMLButtonElement>
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
   disable?: boolean
   fullWidth?: boolean
   className?: string
