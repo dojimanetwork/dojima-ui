@@ -10,7 +10,7 @@ const MuiStyles = makeStyles<Theme, FlatBtnProps>(() => ({
       width:({width}) => width ?? '6rem',
       height:({height}) => height ?? '2.5rem',
       padding: '0rem',
-      border: '0rem none transparent',
+      border: '1px solid #4b4e4f',
       borderRadius: '0.5rem',
       textTransform:({textTransform}) => (textTransform) ?? 'lowercase',
       margin: ({margin}) => (margin) ?? '20px 20px 0px 0px',
