@@ -14,7 +14,7 @@ const MuiStyles = makeStyles<Theme, NeuButtonProps>(() => ({
       border: '0.125rem solid rgba(0,0,0,0.08)',
       borderRadius: '1rem',
       boxShadow: '0.375rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.16), -0.375rem -0.375rem 0.75rem 0rem rgba(255, 255, 255, 0.04)',
-      backgroundImage: 'linear-gradient(100deg, rgba(0, 0, 0, 0) 3%, #000 96%), linear-gradient(to bottom, #212426, #212426)',
+      backgroundImage: 'linear-gradient(100deg, rgba(0, 0, 0, 0) 3%, #212426 96%), linear-gradient(to bottom, #212426, #212426)',
       backgroundOrigin: 'border-box',
       backgroundClip: 'content-box, border-box',
       color:({color}) => color ?? '#e1aa75',
