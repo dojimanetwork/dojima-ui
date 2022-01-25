@@ -31,7 +31,7 @@ interface NeuButtonProps extends ButtonComponentProps{
   height?: string;
 }
 
-function NeuButton(props: ButtonComponentProps) {
+function NeuButton(props: NeuButtonProps) {
   const {
     text,
     onClick,
