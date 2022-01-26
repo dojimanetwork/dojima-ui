@@ -1,6 +1,6 @@
 {
   "name": "@dojima-ui/hooks",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "commom react hooks for dojima organisation.",
   "keywords": [
     "hooks",
@@ -9,11 +9,10 @@
   ],
   "author": "Bhagath reddy <bhagath.reddy@dojima.network>",
   "license": "ISC",
-  "browser": "dist/index.js",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "src": "lib/index.tsx",
-  "types": "dist/lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib"
   },
@@ -21,6 +20,11 @@
     "lib",
     "dist"
   ],
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "lodash": "^4.17.21"
+  },
   "publishConfig": {
     "access": "public"
   },

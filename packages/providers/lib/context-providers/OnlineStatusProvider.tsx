@@ -8,7 +8,7 @@ const getOnLineStatus = () =>
 
 export const OnlineStatusContext = createContext(getOnLineStatus())
 
-export function OnlineStatusProvider(props: ChildrenType) {
+export default function OnlineStatusProvider(props: ChildrenType) {
   const [onlineStatus, setOnlineStatus] = useState<boolean>(getOnLineStatus())
 
   const updateNetwork = () => {
