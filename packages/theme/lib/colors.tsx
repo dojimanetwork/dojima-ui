@@ -7,7 +7,7 @@ export const commonLightGreen = 'rgba(232,244,225,0.5)'
 export const commonBackgroundImage =
   'linear-gradient(to bottom, #40cddf, #5e79e9)'
 export const commonBackgroundColor = 'rgba(1, 160, 179, 0.05)'
-export const primaryLight = '#ffa651'
+export const primaryLight = '#e1aa75'
 export const primaryMain = '#ff751f'
 export const primaryDark = '#c54500'
 export const secondaryLight = '#ff8b82'
