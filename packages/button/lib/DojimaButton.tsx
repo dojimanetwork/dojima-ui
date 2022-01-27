@@ -12,7 +12,7 @@ const MuiStyles = makeStyles(() => ({
       border: '0.25rem solid transparent',
       borderRadius: '1rem',
       boxShadow: '0.375rem 0.375rem 0.75rem 0rem rgba(0, 0, 0, 0.16), -0.375rem -0.375rem 0.75rem 0rem rgba(255, 255, 255, 0.04)',
-      backgroundImage: 'linear-gradient(to bottom, #ffa651, #e17813), linear-gradient(99deg, #2e3234 10%, #000000 92%)',
+      backgroundImage: 'linear-gradient(to bottom, #ffa651, #e17813), linear-gradient(99deg, #2e3234 10%, #212426 92%)',
       backgroundOrigin: 'border-box',
       backgroundClip: 'content-box, border-box',
       color: '#fff',
