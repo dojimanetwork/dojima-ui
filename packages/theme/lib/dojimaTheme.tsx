@@ -1,12 +1,37 @@
-import { createTheme, colors } from "@mui/material";
-import React from "react";
-import MuiTypography from "./typography";
-import MuiShadows from "./shadows";
-import grey from "@mui/material/colors/grey";
-import { black, white, primaryDark, primaryLight, primaryMain, commonLightGreen, commonGreen, secondaryDark, secondaryLight, secondaryMain, buttonHoverColor} from './colors'
+import { createTheme, colors } from '@mui/material'
+import React from 'react'
+import MuiTypography from './typography'
+import MuiShadows from './shadows'
+import grey from '@mui/material/colors/grey'
+import {
+  black,
+  white,
+  primaryDark,
+  primaryLight,
+  primaryMain,
+  commonLightGreen,
+  commonGreen,
+  secondaryDark,
+  secondaryLight,
+  secondaryMain,
+  buttonHoverColor,
+  successMain,
+  errorMain,
+  infoMain,
+  warningMain,
+  blackMain,
+  whitePlaceholders,
+  whiteAssestive,
+  black70,
+  black50,
+  black30,
+  whiteHeadings,
+  black5,
+  whiteSubHeadings
+} from './colors'
 
 export interface DojimaProps {
-  isDark: Boolean;
+  isDark: Boolean
 }
 
 const DojimaTheme = ({ isDark }: DojimaProps) => {
@@ -14,18 +39,18 @@ const DojimaTheme = ({ isDark }: DojimaProps) => {
     () =>
       createTheme({
         breakpoints: {
-          keys: ["xs", "sm", "md", "lg", "xl"],
+          keys: ['xs', 'sm', 'md', 'lg', 'xl'],
           values: {
             xs: 0,
             sm: 600,
             md: 960,
             lg: 1280,
-            xl: 1920,
-          },
+            xl: 1920
+          }
         },
-        direction: "ltr",
+        direction: 'ltr',
         typography: {
-          fontFamily: "Poppins",
+          fontFamily: 'Poppins',
           // The default font size of the Material Specification.
           fontSize: 16, // px
           fontWeightLight: 300,
@@ -35,100 +60,112 @@ const DojimaTheme = ({ isDark }: DojimaProps) => {
           // Tell Material-UI what's the font-size on the html element.
           // 16px is the default font-size used by browsers.
           htmlFontSize: 16,
-          ...MuiTypography,
+          ...MuiTypography
         },
         shadows: MuiShadows,
         palette: {
           common: {
             black: black,
-            white: white,
+            white: white
           },
-          mode: !isDark ? "dark" : "light",
+          mode: !isDark ? 'dark' : 'light',
           background: {
             // dark: isDark ? black : white,
             default: isDark ? white : colors.grey[900],
-            paper: isDark ? white : colors.grey[800],
+            paper: isDark ? white : colors.grey[800]
           },
           primary: {
             main: isDark ? primaryMain : black,
             light: isDark ? primaryLight : commonLightGreen,
             dark: isDark ? primaryDark : commonGreen,
-            contrastText: isDark ? white : white,
+            contrastText: isDark ? white : white
           },
           secondary: {
-            main: isDark ?  secondaryMain : white,
+            main: isDark ? secondaryMain : white,
             light: isDark ? secondaryLight : white,
             dark: isDark ? secondaryDark : white,
-            contrastText: isDark ? black : white,
+            contrastText: isDark ? black : white
           },
           text: {
-            primary: isDark ? "#17252A" : colors.lightGreen[500],
+            primary: isDark ? '#17252A' : colors.lightGreen[500],
             secondary: isDark ? primaryMain : colors.lightGreen[500],
-            disabled: isDark ? grey[600] : colors.lightGreen[900],
+            disabled: isDark ? grey[600] : colors.lightGreen[900]
             // hint: isDark ? black : colors.lightGreen[900],
           },
-          divider: "rgba(0, 0, 0, 0.12)",
+          divider: 'rgba(0, 0, 0, 0.12)',
           error: {
-            main: "#f44336",
-            light: "#e57373",
-            dark: "#d32f2f",
-            contrastText: white,
+            main: errorMain,
+            light: '#e57373',
+            dark: '#d32f2f',
+            contrastText: white
           },
           warning: {
-            main: "#ff9800",
-            light: "#ffb74d",
-            dark: "#f57c00",
-            contrastText: "rgba(0, 0, 0, 0.87)",
+            main: warningMain,
+            light: '#ffb74d',
+            dark: '#f57c00',
+            contrastText: 'rgba(0, 0, 0, 0.87)'
           },
           info: {
-            main: "#2196f3",
-            light: "#64b5f6",
-            dark: "#1976d2",
-            contrastText: white,
+            main: infoMain,
+            light: '#64b5f6',
+            dark: '#1976d2',
+            contrastText: white
           },
           success: {
-            main: "#4caf50",
-            light: "#81c784",
-            dark: "#388e3c",
-            contrastText: "rgba(0, 0, 0, 0.87)",
+            main: successMain,
+            light: '#81c784',
+            dark: '#388e3c',
+            contrastText: 'rgba(0, 0, 0, 0.87)'
+          },
+          grey: {
+            50: white,
+            100: black5,
+            200: whiteHeadings,
+            300: black30,
+            400: black50,
+            500: whiteSubHeadings,
+            600: black70,
+            700: whiteAssestive,
+            800: whitePlaceholders,
+            900: blackMain
           },
           contrastThreshold: 3,
           tonalOffset: 0.2,
           action: {
-            active: "rgba(0, 0, 0, 0.54)",
-            hover: "rgba(0, 0, 0, 0.04)",
+            active: 'rgba(0, 0, 0, 0.54)',
+            hover: 'rgba(0, 0, 0, 0.04)',
             hoverOpacity: 0.04,
-            selected: "rgba(0, 0, 0, 0.08)",
+            selected: 'rgba(0, 0, 0, 0.08)',
             selectedOpacity: 0.08,
-            disabled: "rgba(0, 0, 0, 0.26)",
-            disabledBackground: "rgba(0, 0, 0, 0.12)",
+            disabled: 'rgba(0, 0, 0, 0.26)',
+            disabledBackground: 'rgba(0, 0, 0, 0.12)',
             disabledOpacity: 0.38,
-            focus: "rgba(0, 0, 0, 0.12)",
+            focus: 'rgba(0, 0, 0, 0.12)',
             focusOpacity: 0.12,
-            activatedOpacity: 0.12,
-          },
+            activatedOpacity: 0.12
+          }
         },
         shape: {
-          borderRadius: 4,
+          borderRadius: 4
         },
         components: {
           MuiButton: {
             styleOverrides: {
               root: {
-                "& .MuiButtonBase-root.Mui-disabled": {
-                  backgroundColor: "rgba(0, 0, 0, 0.3)",
-                  backgroundImage: grey[200],
+                '& .MuiButtonBase-root.Mui-disabled': {
+                  backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                  backgroundImage: grey[200]
                 },
-                fontSize: "0.9375rem",
+                fontSize: '0.9375rem'
               },
               contained: {
-                "&:disabled": {
-                  backgroundImage: "none",
+                '&:disabled': {
+                  backgroundImage: 'none'
                 },
-                boxShadow: "none",
-                "&:hover": {
-                  boxShadow: "none",
-                },
+                boxShadow: 'none',
+                '&:hover': {
+                  boxShadow: 'none'
+                }
               },
               outlined: {
                 // background: white,
@@ -140,66 +177,66 @@ const DojimaTheme = ({ isDark }: DojimaProps) => {
               containedPrimary: {
                 // minWidth: '18.75rem',
                 // minHeight: '3.125rem',
-                borderRadius: "0.5rem",
-                fontSize: "0.9375rem",
-                backgroundImage: "linear-gradient(to left, #40cddf, #5e79e9)",
-                "&:hover": {
+                borderRadius: '0.5rem',
+                fontSize: '0.9375rem',
+                backgroundImage: 'linear-gradient(to left, #40cddf, #5e79e9)',
+                '&:hover': {
                   // color: white,
                   // backgroundColor: buttonHover,
                   // boxShadow:
                   //   '0 1.1875rem 1.75rem 0 rgba(86, 86, 86, 0.2), 0 1rem 0.75rem 0 rgba(86, 86, 86, 0.18), 1rem 0 1rem 0 rgba(86, 86, 86, 0.18)',
                   // Reset on touch devices, it doesn't add specificity
-                  "@media (hover: none)": {
+                  '@media (hover: none)': {
                     backgroundColor: buttonHoverColor,
-                    alignSelf: "center",
-                  },
+                    alignSelf: 'center'
+                  }
                 },
-                "@media (max-width: 1024px)": {
-                  fontSize: "0.9375rem",
-                  fontFamily: "Poppins",
-                  borderRadius: "0.25rem",
-                },
+                '@media (max-width: 1024px)': {
+                  fontSize: '0.9375rem',
+                  fontFamily: 'Poppins',
+                  borderRadius: '0.25rem'
+                }
               },
               textPrimary: {
                 color: primaryLight,
-                "&:hover": {
-                  backgroundColor: "transparent",
+                '&:hover': {
+                  backgroundColor: 'transparent',
                   // boxShadow:
                   //   '0 1.1875rem 1.75rem 0 rgba(86, 86, 86, 0.2), 0 1rem 0.75rem 0 rgba(86, 86, 86, 0.18), 1rem 0 1rem 0 rgba(86, 86, 86, 0.18)',
                   // Reset on touch devices, it doesn't add specificity
-                  "@media (hover: none)": {
+                  '@media (hover: none)': {
                     backgroundColor: buttonHoverColor,
-                    alignSelf: "center",
-                  },
-                },
-              },
-            },
+                    alignSelf: 'center'
+                  }
+                }
+              }
+            }
           },
           MuiTextField: {
             styleOverrides: {
               root: {
-                "& .MuiInputBase-root.Mui-disabled": {
-                  color: "rgba(0, 0, 0, 0.5)", // (default alpha is 0.38)
+                '& .MuiInputBase-root.Mui-disabled': {
+                  color: 'rgba(0, 0, 0, 0.5)' // (default alpha is 0.38)
                 },
-                "@media (max-width: 1024px)": {
-                  "& .MuiFormLabel-root": {
+                '@media (max-width: 1024px)': {
+                  '& .MuiFormLabel-root': {
                     // lineHeight: 0,
                     // fontSize: '0.625rem'
                   },
-                  "& .MuiInputBase-root": {
-                    paddingRight: "0.2rem",
-                  },
-                },
-              },
-            },
+                  '& .MuiInputBase-root': {
+                    paddingRight: '0.2rem'
+                  }
+                }
+              }
+            }
           },
           MuiFormControlLabel: {
             styleOverrides: {
               label: {
-                fontSize: "0.9375rem",
-                color: "rgba(0, 0, 0, 0.8)",
-              },
-            },
+                fontSize: '0.9375rem',
+                color: 'rgba(0, 0, 0, 0.8)'
+              }
+            }
           },
           MuiRadio: {
             styleOverrides: {
@@ -207,50 +244,50 @@ const DojimaTheme = ({ isDark }: DojimaProps) => {
 
               colorSecondary: {
                 color: primaryLight,
-                "&$checked": {
-                  color: primaryLight,
-                },
-              },
-            },
+                '&$checked': {
+                  color: primaryLight
+                }
+              }
+            }
           },
           MuiCheckbox: {
             styleOverrides: {
               colorSecondary: {
                 color: primaryLight,
-                "&$checked": {
-                  color: primaryLight,
-                },
-              },
-            },
+                '&$checked': {
+                  color: primaryLight
+                }
+              }
+            }
           },
           MuiStepLabel: {
             styleOverrides: {
               root: {
-                fontFamily: "Poppins",
-                fontSize: "0.875rem",
-              },
-            },
+                fontFamily: 'Poppins',
+                fontSize: '0.875rem'
+              }
+            }
           },
           MuiInputLabel: {
             styleOverrides: {
               root: {
-                "&$disabled": {
-                  color: "rgba(0,0,0,0.3)",
-                },
+                '&$disabled': {
+                  color: 'rgba(0,0,0,0.3)'
+                }
               },
               outlined: {
-                "&$shrink": {
-                  transform: "translate(0px, -6px) scale(0.75)",
-                },
-              },
-            },
-          },
-        },
+                '&$shrink': {
+                  transform: 'translate(0px, -6px) scale(0.75)'
+                }
+              }
+            }
+          }
+        }
       }),
     [isDark]
-  );
+  )
 
-  return theme;
-};
+  return theme
+}
 
-export default DojimaTheme;
+export default DojimaTheme
