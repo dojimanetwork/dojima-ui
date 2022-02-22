@@ -2,12 +2,18 @@ import React from 'react'
 import Button from '@mui/material/Button'
 import { ButtonComponentProps } from '@dojima-ui/types'
 import { makeStyles } from '@mui/styles'
+import { Theme } from '@mui/material'
 
-const MuiStyles = makeStyles(() => ({
+interface DojimaButtonProps extends ButtonComponentProps{
+  width?: string;
+  height?: string;
+}
+
+const MuiStyles = makeStyles<Theme, DojimaButtonProps>(() => ({
   button: {
     '&.MuiButton-root': {
-      width: '18.75rem',
-      height: '3.5rem',
+      width:({width}) => width ?? '18.75rem',
+      height:({height}) => height ?? '3.5rem',
       padding: '0rem',
       border: '0.25rem solid transparent',
       borderRadius: '1rem',
@@ -29,7 +35,7 @@ const MuiStyles = makeStyles(() => ({
   }
 }))
 
-function DojimaButton(props: ButtonComponentProps) {
+function DojimaButton(props: DojimaButtonProps) {
   const {
     text,
     onClick,
@@ -38,7 +44,7 @@ function DojimaButton(props: ButtonComponentProps) {
     buttonStyles
   } = props
 
-  const classes = MuiStyles()
+  const classes = MuiStyles({...props})
 
   return (
     <Button
