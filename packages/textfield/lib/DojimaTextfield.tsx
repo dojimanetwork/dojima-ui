@@ -69,7 +69,8 @@ import {
       onMouseOut,
       placeholder,
       endAdornment,
-      formControl
+      formControl,
+      autoComplete
     } = props
   
     // const labelProps = !labelShrink ? null : { shrink: true };
@@ -94,6 +95,7 @@ import {
           disabled={disable}
         >
           <CustomInput
+          autoComplete={autoComplete}
             error={error}
             fullWidth={fullWidth ?? false}
             type={type}
