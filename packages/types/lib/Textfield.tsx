@@ -32,5 +32,6 @@ export interface TextfieldComponentProps
   formControl?: string
   onMouseOut?: React.MouseEventHandler<HTMLDivElement>
   endAdornment?: ReactNode | ReactPortal
-  labelShrink?: boolean
+  labelShrink?: boolean;
+  autoComplete?: string;
 }
