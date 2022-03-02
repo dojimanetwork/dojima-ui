@@ -13,7 +13,7 @@ function DojimaSnackbar(props: SnackbarComponentProps) {
     horizontal,
     message,
     keyId,
-    onClose
+    Close
   } = props
   return (
     <Snackbar
@@ -24,7 +24,7 @@ function DojimaSnackbar(props: SnackbarComponentProps) {
         vertical: vertical ?? 'bottom',
         horizontal: horizontal ?? 'left'
       }}
-      onClose={onClose}
+      onClose={Close}
     >
       <DojimaAlert variant={variant ?? 'filled'} severity={severity ?? 'info'}>
         {message}

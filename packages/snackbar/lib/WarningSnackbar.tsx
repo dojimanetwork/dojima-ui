@@ -11,7 +11,7 @@ function DojimaWarningSnackbar(props: SnackbarComponentProps) {
     autoHideDuration,
     variant,
     keyId,
-    onClose
+    Close
   } = props
   return (
     <DojimaSnackbar
@@ -23,7 +23,7 @@ function DojimaWarningSnackbar(props: SnackbarComponentProps) {
       autoHideDuration={autoHideDuration ?? 3000}
       severity='warning'
       variant={variant ?? 'filled'}
-      onClose={onClose}
+      Close={Close}
     />
   )
 }

@@ -11,7 +11,7 @@ function DojimaSuccessSnackbar(props: SnackbarComponentProps) {
     autoHideDuration,
     variant,
     keyId,
-    onClose
+    Close
   } = props
   return (
     <DojimaSnackbar
@@ -22,7 +22,7 @@ function DojimaSuccessSnackbar(props: SnackbarComponentProps) {
       autoHideDuration={autoHideDuration ?? 3000}
       severity='success'
       variant={variant ?? 'filled'}
-      onClose={onClose}
+      Close={Close}
       keyId={keyId}
     />
   )
